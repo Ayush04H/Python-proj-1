@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table>
+    <tr>
+        {% for each in headings %}
+            <th>{{ each }}</th>
+        {% endfor %}
+    </tr>
+
+    {% for each_tuple in mylist %}
+        <tr>
+            {% for each_element in each_tuple %}
+                <td>{{ each_element }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+
+
+
+
+</table>
+
+{% endblock %}
