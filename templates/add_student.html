@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+    <h1>Student Add Page</h1>
+
+
+    <form action="" method="POST">
+
+        <div class="form-group">
+            <p>Student Name <input class="form-control" type="text" name="studentname"/></p>
+            <p>Student ID <input class="form-control" type="text" name="id"/></p>
+            <p>Address<input class="form-control" type="text" name="address"/></p>
+            <p>Gender<input class="form-control" type="text" name="gender"/></p>
+            <p>Date Of Birth<input class="form-control" type="text" name="dob"/></p>
+            <p>CHEM101<input class="form-control" type="text" name="chem101"/></p>
+            <p>MATH101<input class="form-control" type="text" name="math101"/></p>
+            <p>PHYS101<input class="form-control" type="text" name="phys101"/></p>
+        </div>
+
+        
+        
+
+        <p><button class="btn btn-primary" type="submit">SUBMIT</button></p>
+    </form>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <table class="table table-hover">
+        <tr>
+            <th>Course Code</th>
+            <th>Number of Studets</th>
+            <th>Average Score</th>
+            <th>Passing Students</th>
+        </tr>
+
+        {% for each_dict in course_details %}
+            <tr>
+                <td>{{ each_dict['name'] }}</td>
+                <td>{{ each_dict['num_students'] }}</td>
+                <td>{{ each_dict['average'] }}</td>
+                <td>{{ each_dict['passed'] }}</td>
+
+            </tr>
+
+        {% endfor %}
+    </table>
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+    <h1>Student Edit Page</h1>
+
+    <form action="" method="POST">
+
+        <p>
+            Student Name
+            <input type="text" name="studentname" value="{{ info_results[0]  }}"/>
+        </p>
+
+        <p>
+            Student ID
+            <input type="text" name="id" value="{{ info_results[1]  }}" readonly/>
+        </p>
+
+        <p>
+            Address
+            <input type="text" name="address" value="{{ info_results[2]  }}"/>
+        </p>
+
+        <p>
+            Gender
+            <input type="text" name="gender" value="{{ info_results[3]  }}"/>
+        </p>
+
+        <p>
+            Date Of Birth
+            <input type="text" name="dob" value="{{ info_results[4]  }}"/>
+        </p>
+
+        <p>
+            CHEM101
+            <input type="text" name="chem101" value="{{ scores_dict['CHEM101']  }}"/>
+        </p>
+
+        <p>
+            MATH101
+            <input type="text" name="math101" value="{{ scores_dict['MATH101']  }}"/>
+        </p>
+
+        <p>
+            PHYS101
+            <input type="text" name="phys101" value="{{ scores_dict['PHYS101']  }}"/>
+        </p>
+
+        <p><button class="btn btn-primary" type="submit">SUBMIT</button></p>
+    </form>
+
+
+
+{% endblock %}

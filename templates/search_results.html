@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<table>
+<table class="table table-hover">
     <tr>
         {% for each in headings %}
             <th>{{ each }}</th>
@@ -13,6 +13,7 @@
             {% for each_element in each_tuple %}
                 <td>{{ each_element }}</td>
             {% endfor %}
+            <td><a href="/edit_student/{{ each_tuple[1] }}">Edit</a></td>
         </tr>
     {% endfor %}
 
